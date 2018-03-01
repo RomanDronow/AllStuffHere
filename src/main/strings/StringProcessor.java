@@ -8,7 +8,7 @@ public class StringProcessor {
         String dest = new String();
         if (n < 0) throw new WrongValueException("Число N меньше нуля");
         else if (n == 0) {
-            dest = "empty";
+            dest = "";
         } else {
             for (int i = 0; i < n; i++) {
                 dest += str;
@@ -33,7 +33,7 @@ public class StringProcessor {
     public static String numberize(String str){
         str = str.replace("1","one");
         str = str.replace("2","two");
-        str = str.replace("3","third");
+        str = str.replace("3","three");
         return str;
     }
 
